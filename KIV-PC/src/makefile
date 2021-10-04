@@ -1,0 +1,29 @@
+# Použitý překladač
+CC = gcc
+CFLAGS = -Wall -Wextra -pedantic -ansi -g
+
+# Binární soubory projektu
+BIN = lisp.exe
+OBJ = stack.o list.o lisp.o operators.o loader.o
+
+# Návody pro sestavení projektu
+$(BIN): $(OBJ)
+	gcc $(OBJ) -o $(BIN) $(CFLAGS)
+
+stack.o: stack.c stack.h
+	gcc -c stack.c $(CFLAGS)
+
+list.o: list.c list.h
+	gcc -c list.c $(CFLAGS)
+
+operators.o: operators.c operators.h
+	gcc -c operators.c $(CFLAGS)
+
+loader.o: loader.c loader.h
+	gcc -c loader.c $(CFLAGS)
+
+lisp.o: lisp.c
+	gcc -c lisp.c $(CFLAGS)
+
+clean:
+	rm *.o

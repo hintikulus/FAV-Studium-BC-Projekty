@@ -10,7 +10,7 @@ Tento repozitář obsahuje většinu semestrálních prací z různých předmě
 * [KIV/WEB - Webové aplikace](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-WEB)
 * [KIV/PRO - Programátorské strategie](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PRO)
 * [KIV/UIR - Umělá inteligence a rozpoznávání](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-UIR)
-* [KIV/PGS - Programové struktury](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PGS) - Potřeba doplnit
+* [KIV/PGS - Programové struktury](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PGS)
 
 ## Upozornění
 Práce jsou hotové a funkční, každopádně z důvodu mého nešťastného rozvržení času na vypracování by si některé práce (včetně přibalených souborů jako např. dokumentace) zasloužily dotáhnout a odladit. Zároveň se jedná o práce z mého studia, to znamená, že některé části jsou poněkud krkolomné nebo neefektivní a šly by udělat lépe. Tyto chyby jsou způsobeny mou tehdejší neznalostí a nezkušeností. Z těchto důvodu není vhodné slepě kód okoukat.

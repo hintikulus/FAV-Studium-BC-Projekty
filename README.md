@@ -1,4 +1,4 @@
-# Semestrální práce mého balalářského studia
+# Semestrální práce mého bakalářského studia
 Tento repozitář obsahuje většinu semestrálních prací z různých předmětů, které jsem v rámci svého bakalářského studia absolvoval.
 
 ## Seznam prací:

@@ -6,7 +6,7 @@ Tento repozitář obsahuje většinu semestrálních prací z různých předmě
 * [KIV/UPG - Úvod do počítačové grafiky](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-UPG)
 * [KIV/DB1 - Databázové systémy 1](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-DB1)
 * [KIV/PC - Programování v jazyce C](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PC)
-* [KIV/TI - Teoretická informatika](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-TI) - Potřeba doplnit zdrojové kódy aplikace
+* [KIV/TI - Teoretická informatika](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-TI)
 * [KIV/WEB - Webové aplikace](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-WEB)
 * [KIV/PRO - Programátorské strategie](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PRO)
 * [KIV/UIR - Umělá inteligence a rozpoznávání](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-UIR)

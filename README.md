@@ -2,7 +2,7 @@
 Tento repozitář obsahuje většinu semestrálních prací z různých předmětů, které jsem v rámci svého bakalářského studia absolvoval.
 
 ## Seznam prací:
-* KIV/POT - Počítačová technika
+* [KIV/POT - Počítačová technika](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-POT)
 * KIV/UPG - Úvod do počítačové grafiky
 * KIV/DB1 - Databázové systémy
 * KIV/PC - Programování v jazyce C

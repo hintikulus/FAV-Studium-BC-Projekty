@@ -1,0 +1,197 @@
+               .h8300s
+
+               .equ syscall,0x1FF00               ; simulated IO area
+               .equ PUTS,0x0114                   ; kod PUTS
+               .equ GETS,0x0113                   ; kod GETS
+               .equ PUTC,0x0112                   ; kod PUTC
+               .equ GETC,0x0111                   ; kod GETC
+
+; ------ datovy segment ----------------------------
+
+               .data
+txt1:     .asciz "Simulovany vystup\n"       ; vypisovany text ukonceny \n
+txt2:	  .asciz "Insert\n"
+txt3:	  .asciz "Delete\n"
+txtStart: .asciz "Zadejte pocatecni retezec:\n"
+txtInput: .asciz "Zadejte prikaz i/d:\n"
+buffer:   .space 100
+retezec:  .space 100                         ; vstupni buffer
+
+; parametricke bloky musi byt zarovnane na dword
+               .align 2                        ; zarovnani adresy
+par1:		   .long txt1
+par1insert:    .long txt2                         ; parametricky blok 1
+par1delete:	   .long txt3
+parStart:	   .long txtStart
+parInput:	   .long txtInput
+par2:     .long buffer                       ; parametricky blok 2
+par3:	  .long retezec
+
+; stack musi byt zarovnany na word
+               .align 1                           ; zarovnani adresy
+          .space 100                         ; stack
+stck:                                        ; konec stacku + 1
+
+; ------ kodovy segment ----------------------------
+
+               .text
+               .global _start
+
+_start: 	mov.l #stck,ER7
+			
+			; Vypis vyzvy pro zapsani pocatecniho retezce
+			mov.w #PUTS,R0                     ; 24bitovy PUTS
+            mov.l #parStart, ER1                    ; adr. param. bloku do ER1
+            jsr @syscall
+			
+			; Precteni zadaneho retezce
+            mov.w #GETS, R0                     ; 24bitovy PUTS
+            mov.l #par2,ER1                    ; adr. param. bloku do ER1
+            jsr @syscall
+			
+			jmp vlozitAll			
+			
+			; Precte prikaz a vyhodnoti typ prikazu. Pote skoci na prislucne navesti patrici danemu prikazu.
+readInst:	
+			; Vypis vyzvy pro zapsani prikazu
+			mov.w #PUTS,R0                     ; 24bitovy PUTS
+            mov.l #parInput, ER1                    ; adr. param. blok
+            jsr @syscall
+
+			; Precteni prikazu			
+			mov.w #GETS, R0                     ; 24bitovy PUTS
+            mov.l #par2,ER1                    ; adr. param. bloku do ER1
+            jsr @syscall
+			
+			mov.l #buffer, ER6
+			mov.b @ER6, R4L
+			
+			cmp.b #0x69, R4L
+			beq insert
+			
+			cmp.b #0x64, R4L
+			beq delete
+			
+			jmp readInst
+
+
+vlozitAll:	mov.l #buffer, ER6
+			mov.l #retezec, ER5
+			xor.w R3, R3; delka retezce
+vlozitAll2:	
+			inc.w #1,R3
+			
+			mov.b @ER6, R4L
+			mov.b R4L, @ER5
+			inc.l #1, ER6
+			inc.l #1, ER5
+			cmp.b #0x0A, R4L
+			beq readInst
+			jmp vlozitAll2
+			
+
+konec:     	jmp @konec                          ; konec vypoctu
+
+read:		
+
+vypis:	
+			mov.w #PUTS,R0                     ; 24bitovy PUTS
+            mov.l #par3, ER1                ; adr. param. bloku do ER1
+            jsr @syscall
+			
+			rts
+
+insert:		
+			mov.w #PUTS,R0                     ; 24bitovy PUTS
+            mov.l #par1insert, ER1                    ; adr. param. bloku do ER1
+            jsr @syscall
+			
+			jsr @prevod
+posunDal1:	
+			mov.b #0x20, R2H
+			mov.l #retezec, ER4
+			add.l ER5, ER4
+			
+posunDal2:	 ;posunuti znaku
+			mov.b @ER4, R2L
+			mov.b R2H, @ER4
+			
+			cmp.b #0x0A, R2H
+			beq posunDal3
+			
+			mov.b R2L, R2H
+			inc.l #1, ER4
+			
+			jmp posunDal2
+			
+posunDal3:
+	jsr vypis
+	jmp readInst
+
+delete:		
+			mov.w #PUTS,R0                     ; 24bitovy PUTS
+            mov.l #par1delete,ER1                    ; adr. param. bloku do ER1
+            jsr @syscall
+			
+			jsr @prevod
+					
+posunZpet1:
+			mov.l #retezec, ER4
+			add.l ER5, ER4
+			mov.l ER4, ER5
+			inc.l #1, ER5
+posunZpet2:
+			mov.b @ER5, R2L
+			mov.b R2L, @ER4
+			
+			inc.l #1, ER5
+			inc.l #1, ER4
+			
+			cmp.b #0x0A, R2L
+			beq posunZpet3
+			
+			jmp posunZpet2
+			
+posunZpet3:
+	jsr vypis
+	jmp readInst
+	
+	;prevede ASCII retezec na cislo
+	;vstup: ER6		vystup: R5
+prevod:
+			inc.l #1, ER6
+ 			push.l 	ER1
+			xor.l 	ER5,	ER5
+			xor.w 	R1, 	R1
+			mov.w 	#10,	E1
+lab2:		mov.b 	@ER6, 	R1L
+			cmp.b 	#0x0A, 	R1L
+			beq 	lab3
+			
+			add.b 	#-'0', 	R1L
+			mulxu.w E1, 	ER5
+			add.w 	R1,		R5
+			inc.l	#1, 	ER6
+			jmp		@lab2
+lab3:		pop.l ER1;
+			rts;	
+lab4:				
+lab5:
+			
+prevod2:
+ 			push.l 	ER1
+			xor.w 	R5,	    R5
+			xor.w 	R1, 	R1
+			mov.w 	#10,	E1
+lab22:		mov.b 	@ER6, 	R1L
+			cmp.b 	#0x0A, 	R1L
+			beq 	lab3
+			add.b 	#-'0', 	R1L
+			mulxu.w E1, 	ER5
+			add.w 	R1,		R5
+			inc.l	#1, 	ER6
+			jmp		@lab2
+lab32:		pop.l ER1;
+			rts;
+			.end
+			

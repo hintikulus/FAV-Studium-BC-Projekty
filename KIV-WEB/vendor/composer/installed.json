@@ -1,0 +1,470 @@
+[
+    {
+        "name": "alexandermatveev/popper-bundle",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "target-dir": "AlexanderMatveev/PopperBundle",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AlexanderMatveev/popper-bundle.git",
+            "reference": "d576b1fe5ed8dd51cad32dcdec1da3ca4142008b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/AlexanderMatveev/popper-bundle/zipball/d576b1fe5ed8dd51cad32dcdec1da3ca4142008b",
+            "reference": "d576b1fe5ed8dd51cad32dcdec1da3ca4142008b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "symfony/console": "~2.1",
+            "symfony/framework-bundle": "~2.1",
+            "symfony/yaml": "~2.1"
+        },
+        "time": "2018-10-09T08:28:38+00:00",
+        "type": "symfony-bundle",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "AlexanderMatveev\\PopperBundle": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Aleksandr Matveev",
+                "homepage": "https://github.com/AlexanderMatveev"
+            }
+        ],
+        "description": "Popper.js Bundle for Symfony3+",
+        "homepage": "https://github.com/AlexanderMatveev/popper-bundle",
+        "keywords": [
+            "javascript",
+            "popper",
+            "symfony"
+        ]
+    },
+    {
+        "name": "ckeditor/ckeditor",
+        "version": "4.15.1",
+        "version_normalized": "4.15.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ckeditor/ckeditor4-releases.git",
+            "reference": "b1aa2f31687b5d48a4f4a9a94d388b525a82663f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ckeditor/ckeditor4-releases/zipball/b1aa2f31687b5d48a4f4a9a94d388b525a82663f",
+            "reference": "b1aa2f31687b5d48a4f4a9a94d388b525a82663f",
+            "shasum": ""
+        },
+        "time": "2020-11-09T14:21:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+",
+            "LGPL-2.1+",
+            "MPL-1.1+"
+        ],
+        "authors": [
+            {
+                "name": "CKSource",
+                "homepage": "https://cksource.com"
+            }
+        ],
+        "description": "JavaScript WYSIWYG web text editor.",
+        "homepage": "https://ckeditor.com/ckeditor-4/",
+        "keywords": [
+            "CKEditor",
+            "ckeditor4",
+            "editor",
+            "fckeditor",
+            "html",
+            "javascript",
+            "richtext",
+            "text",
+            "wysiwyg"
+        ]
+    },
+    {
+        "name": "components/font-awesome",
+        "version": "5.15.1",
+        "version_normalized": "5.15.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/font-awesome.git",
+            "reference": "6943708effe6d823d40255bcdbe9ee021312c880"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/font-awesome/zipball/6943708effe6d823d40255bcdbe9ee021312c880",
+            "reference": "6943708effe6d823d40255bcdbe9ee021312c880",
+            "shasum": ""
+        },
+        "time": "2020-10-06T06:45:49+00:00",
+        "type": "component",
+        "extra": {
+            "component": {
+                "styles": [
+                    "css/all.css"
+                ],
+                "files": [
+                    "css/all.min.css",
+                    "webfonts/*"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "CC-BY-4.0",
+            "MIT",
+            "OFL-1.1"
+        ],
+        "description": "Font Awesome, the iconic SVG, font, and CSS framework."
+    },
+    {
+        "name": "components/jquery",
+        "version": "3.5.1",
+        "version_normalized": "3.5.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/jquery.git",
+            "reference": "b33e8f0f9a1cb2ae390cf05d766a900b53d2125b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/jquery/zipball/b33e8f0f9a1cb2ae390cf05d766a900b53d2125b",
+            "reference": "b33e8f0f9a1cb2ae390cf05d766a900b53d2125b",
+            "shasum": ""
+        },
+        "time": "2020-05-05T13:21:02+00:00",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "jquery.js"
+                ],
+                "files": [
+                    "jquery.min.js",
+                    "jquery.min.map",
+                    "jquery.slim.js",
+                    "jquery.slim.min.js",
+                    "jquery.slim.min.map"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "JS Foundation and other contributors"
+            }
+        ],
+        "description": "jQuery JavaScript Library",
+        "homepage": "http://jquery.com"
+    },
+    {
+        "name": "google/recaptcha",
+        "version": "1.2.4",
+        "version_normalized": "1.2.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/google/recaptcha.git",
+            "reference": "614f25a9038be4f3f2da7cbfd778dc5b357d2419"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/google/recaptcha/zipball/614f25a9038be4f3f2da7cbfd778dc5b357d2419",
+            "reference": "614f25a9038be4f3f2da7cbfd778dc5b357d2419",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.2.20|^2.15",
+            "php-coveralls/php-coveralls": "^2.1",
+            "phpunit/phpunit": "^4.8.36|^5.7.27|^6.59|^7.5.11"
+        },
+        "time": "2020-03-31T17:50:54+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ReCaptcha\\": "src/ReCaptcha"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Client library for reCAPTCHA, a free service that protects websites from spam and abuse.",
+        "homepage": "https://www.google.com/recaptcha/",
+        "keywords": [
+            "Abuse",
+            "captcha",
+            "recaptcha",
+            "spam"
+        ]
+    },
+    {
+        "name": "symfony/polyfill-ctype",
+        "version": "v1.20.0",
+        "version_normalized": "1.20.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-ctype.git",
+            "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f4ba089a5b6366e453971d3aad5fe8e897b37f41",
+            "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "suggest": {
+            "ext-ctype": "For best performance"
+        },
+        "time": "2020-10-23T14:02:19+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-main": "1.20-dev"
+            },
+            "thanks": {
+                "name": "symfony/polyfill",
+                "url": "https://github.com/symfony/polyfill"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Ctype\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Gert de Pagter",
+                "email": "BackEndTea@gmail.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill for ctype functions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "ctype",
+            "polyfill",
+            "portable"
+        ]
+    },
+    {
+        "name": "symfony/polyfill-mbstring",
+        "version": "v1.20.0",
+        "version_normalized": "1.20.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-mbstring.git",
+            "reference": "39d483bdf39be819deabf04ec872eb0b2410b531"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/39d483bdf39be819deabf04ec872eb0b2410b531",
+            "reference": "39d483bdf39be819deabf04ec872eb0b2410b531",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "suggest": {
+            "ext-mbstring": "For best performance"
+        },
+        "time": "2020-10-23T14:02:19+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-main": "1.20-dev"
+            },
+            "thanks": {
+                "name": "symfony/polyfill",
+                "url": "https://github.com/symfony/polyfill"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Mbstring\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill for the Mbstring extension",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "mbstring",
+            "polyfill",
+            "portable",
+            "shim"
+        ]
+    },
+    {
+        "name": "twbs/bootstrap",
+        "version": "v5.0.0-beta1",
+        "version_normalized": "5.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twbs/bootstrap.git",
+            "reference": "63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3",
+            "reference": "63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3",
+            "shasum": ""
+        },
+        "replace": {
+            "twitter/bootstrap": "self.version"
+        },
+        "time": "2020-12-07T16:18:16+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mark Otto",
+                "email": "markdotto@gmail.com"
+            },
+            {
+                "name": "Jacob Thornton",
+                "email": "jacobthornton@gmail.com"
+            }
+        ],
+        "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+        "homepage": "https://getbootstrap.com/",
+        "keywords": [
+            "JS",
+            "css",
+            "framework",
+            "front-end",
+            "mobile-first",
+            "responsive",
+            "sass",
+            "web"
+        ]
+    },
+    {
+        "name": "twig/twig",
+        "version": "v2.12.5",
+        "version_normalized": "2.12.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twigphp/Twig.git",
+            "reference": "18772e0190734944277ee97a02a9a6c6555fcd94"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/18772e0190734944277ee97a02a9a6c6555fcd94",
+            "reference": "18772e0190734944277ee97a02a9a6c6555fcd94",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.0",
+            "symfony/polyfill-ctype": "^1.8",
+            "symfony/polyfill-mbstring": "^1.3"
+        },
+        "require-dev": {
+            "psr/container": "^1.0",
+            "symfony/phpunit-bridge": "^4.4|^5.0"
+        },
+        "time": "2020-02-11T15:31:23+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.12-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            },
+            "psr-4": {
+                "Twig\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Twig Team",
+                "role": "Contributors"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "https://twig.symfony.com",
+        "keywords": [
+            "templating"
+        ]
+    }
+]

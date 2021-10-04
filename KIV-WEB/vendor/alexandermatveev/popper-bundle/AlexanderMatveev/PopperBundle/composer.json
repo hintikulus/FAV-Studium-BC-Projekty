@@ -1,0 +1,28 @@
+{
+    "name":        "alexandermatveev/popper-bundle",
+    "type":        "symfony-bundle",
+    "description": "Popper.js Bundle for Symfony3+",
+    "keywords":    ["popper", "javascript", "symfony"],
+    "homepage":    "https://github.com/AlexanderMatveev/popper-bundle",
+    "license":     ["MIT"],
+    "authors":     [
+        {
+            "name":     "Aleksandr Matveev",
+            "homepage": "https://github.com/AlexanderMatveev"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "~2.1",
+        "symfony/console": "~2.1",
+        "symfony/yaml": "~2.1"
+    },
+    "autoload":    {
+        "psr-0": {
+            "AlexanderMatveev\\PopperBundle": ""
+        }
+    },
+    "target-dir":  "AlexanderMatveev/PopperBundle"
+}

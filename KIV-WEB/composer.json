@@ -1,0 +1,17 @@
+{
+    "description": "Semestralka z KIV/WEB",
+    "require": {
+        "alexandermatveev/popper-bundle": ">=1.0",
+        "ckeditor/ckeditor": "^4.15",
+        "components/font-awesome": "5.15.1",
+        "components/jquery": ">=3.0",
+        "twbs/bootstrap": ">=5.0.0-beta1",
+        "twig/twig": ">= 1.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3"
+        },
+        "sort-packages": true
+    }
+}

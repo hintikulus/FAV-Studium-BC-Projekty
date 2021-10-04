@@ -15,4 +15,4 @@ Tento repozitář obsahuje většinu semestrálních prací z různých předmě
 **Odkazy na jednotlivé složky budou dodány**
 
 ## Upozornění
-Práce jsou hotové a funkční, každopádně z důvodu mého nešťastného rozvržení času na vypracování by si některé práce (včetně přibalených souborů jako např. dokumentace) zasloužily dotáhnout a odladit. Zároveň se jedná o práce z mého studia, to znamená, že některé části jsou poněkud krkolomné nebo neefektivní. Tyto chyby jsou způsobeny mou tehdejší meznalostí. Z těchto důvodu není vhodné slepě kód okoukat.
+Práce jsou hotové a funkční, každopádně z důvodu mého nešťastného rozvržení času na vypracování by si některé práce (včetně přibalených souborů jako např. dokumentace) zasloužily dotáhnout a odladit. Zároveň se jedná o práce z mého studia, to znamená, že některé části jsou poněkud krkolomné nebo neefektivní a šly by udělat lépe. Tyto chyby jsou způsobeny mou tehdejší neznalostí a nezkušeností. Z těchto důvodu není vhodné slepě kód okoukat.

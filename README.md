@@ -10,7 +10,7 @@ Tento repozitář obsahuje většinu semestrálních prací z různých předmě
 * [**KIV/WEB** - Webové aplikace](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-WEB) - Konferenční webová aplikace
 * [**KIV/PRO** - Programátorské strategie](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PRO) - RoleMining a Problém čínského listonoše
 * [**KIV/UIR** - Umělá inteligence a rozpoznávání](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-UIR) - Rozpoznávání ručně psaných číslic
-* [**KIV/PGS** - Programové struktury](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PGS) - Vlákna a python
+* [**KIV/PGS** - Programové struktury](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PGS) - Java vlákna a python
 * **KIV-ZOS** - Základy operačních systémů - Souborový systém - ***dosud nevypracováno***
 * **KIV-UPS** - Úvod do počítačových sítí - Online hra Dáma - ***dosud nevypracováno***
 

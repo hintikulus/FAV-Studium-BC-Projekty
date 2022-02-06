@@ -3,8 +3,8 @@ Tento repozitář obsahuje většinu semestrálních prací z různých předmě
 
 ## Seznam prací:
 * [**KIV/POT** - Počítačová technika](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-POT) - Editace řetězce
-* [**KIV/UPG** - Úvod do počítačové grafiky](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-UPG) - Vizualizace dat
-* [**KIV/DB1** - Databázové systémy 1](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-DB1) - Online hra
+* [**KIV/UPG** - Úvod do počítačové grafiky](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-UPG) - Grafická vizualizace dat
+* [**KIV/DB1** - Databázové systémy 1](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-DB1) - Databáze online hry
 * [**KIV/PC** - Programování v jazyce C](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-PC) - Interpret Lispu
 * [**KIV/TI** - Teoretická informatika](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-TI) - Míchání kapalin v nádrži
 * [**KIV/WEB** - Webové aplikace](https://github.com/hintikulus/school_bc_projects/tree/main/KIV-WEB) - Konferenční webová aplikace
